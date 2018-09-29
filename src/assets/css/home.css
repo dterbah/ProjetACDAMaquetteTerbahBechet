@@ -1,0 +1,95 @@
+article {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+	width: 90%;
+}
+
+.top-title {
+	display: inline;
+}
+
+.begin-visit {
+	float: right;
+}
+/* principal container*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+/* List of customers*/
+.customer-list {
+	width: 30%;
+}
+.customer-list li {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;	
+}
+.customer-list li:hover {
+	cursor: pointer;
+}
+
+.active-customer {
+	background-color: #afb2a1;
+	border-bottom-right-radius : 40px;
+	border-top-right-radius: 40px;
+	width: 100%;
+	border: 1px solid gray;
+}
+
+
+/* Customer info */
+.customer-info {
+	width: 35%;
+}
+
+.container-input-label {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 5%;
+}
+
+.customer-info input {
+	height: 30px;
+}
+.customer-info input:not(.address-input) {
+	width: 70%;
+	float: right;
+}
+
+
+.container-input-label label {
+	width: 25%;
+}
+
+.address-input {
+	width: 60%;
+	height: 30px;
+}
+
+/* Housing info*/
+.housing-info {
+	width: 35%;
+}
+
+.housing-info div:last-child {
+	margin-top: 10px;
+}
+
+.container-room {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 5%;
+}
+
+.container-room input {
+	width: 50%;
+	height: 30px;
+	float: right;
+}
+

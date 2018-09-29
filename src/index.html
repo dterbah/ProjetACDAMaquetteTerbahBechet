@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Informations clients</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="./assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./assets/js/customers-informations.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<article>
+		<div class="top-container">
+			<h4 class="top-title">Liste Cients</h4>
+			<button class="w3-button w3-gray begin-visit">Commencer la visite</button>
+		</div>
+		<div class="container">
+
+			<div class="customer-list w3-border">
+				<ul>
+					<li class="w3-padding-16" id="thomas-bechet">Thomas Béchet</li>
+					<li class="w3-padding-16" id="dorian-terbah">Dorian Terbah</li>
+					<li class="w3-padding-16" id="nathan-bertholier">Nathan Bertholier</li>
+					<li class="w3-padding-16 active-customer" id="jean-dupont">Mr Dupont</li>
+					<li class="w3-padding-16" id="patrick-cegielski">Patrick Cegielski</li>
+					<li class="w3-padding-16" id="nathalie-gillet">Nathalie Gillet</li>
+					<li class="w3-padding-16" id="denis-monnerat">Denis Monnerat</li> 
+				</ul>
+			</div>
+
+			<div class="customer-info w3-border">
+
+				 <form class="w3-container w3-margin">
+				 	<h4 class="w3-center w3-border">Informations Client</h4>
+				 		<div class="container-input-label">
+				 			<label>Nom : </label>
+				 			<input type="text" name="lastname" class="w3-input w3-border" value="Dupont">
+				 		</div>
+				 		
+				 		<div class="container-input-label">
+				 			<label>Prénom : </label>
+				 			<input type="text" name="firstname" class="w3-input w3-border" value="Jean">
+				 		</div>
+
+						<div class="container-input-label">
+							<label><i class="fa fa-phone w3-xlarge"></i> : </label>
+							<input type="text" name="phone-number" class="w3-input w3-border" value="06.06.06.06.06">
+						</div>	
+
+						<div class="container-input-label">
+							<label><i class="fa fa-envelope-o w3-xlarge"></i> : </label>
+							<input type="email" name="email" class="w3-input w3-border" value="jean.dupont@gmail.com">
+						</div>	
+
+						<div>
+							<label>Logement départ : </label>
+							<input type="text" name="addressStart" class="w3-input w3-border address-input" value="3 rue de la Tour, Tourville">
+						</div>		 		
+				 </form>
+
+			</div>
+
+			<div class="housing-info w3-border">
+				<form class="w3-container w3-margin">
+				 	<h4 class="w3-center w3-border">Informations Logement</h4>
+				 		<select class="w3-select" name="option">
+							<option value="house">Maison</option>
+							<option value="flat">Appartement</option>
+							<option value="other">Autre</option>
+						</select> 
+						
+						<div class="w3-margin-top">
+							<input type="checkbox">
+							<label>Plusieurs étages</label>
+						</div>						
+
+						<div class="container-room">
+							<label>Nombre de pièces : </label>
+							<input type="text" name="number-room" value="3" class="w3-input w3-border">
+						</div>
+
+						<br><br>
+
+						<div>
+							<label>Logement d'arrivée : </label>
+							<input type="text" name="addressEnd" class="w3-input w3-border address-input" value="4 rue de la Liberté, LibertyCity">
+						</div>
+				 </form>
+			</div>
+
+		</div>
+
+	</article>
+</body>
+</html>
