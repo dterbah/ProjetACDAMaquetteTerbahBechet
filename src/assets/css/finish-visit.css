@@ -1,0 +1,31 @@
+/* prices */
+.price {
+	display: inline;
+	float: right;
+}
+
+.price-container {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+i:hover {
+	cursor: auto;
+}
+
+.informations-services {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-container i {
+	display: block;
+	color: #c1c3b9;
+}
+
+/* container buttons */
+.button-container {
+	display: flex;
+	justify-content: space-around;
+}

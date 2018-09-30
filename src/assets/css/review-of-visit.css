@@ -15,6 +15,11 @@ article {
 	width: 47%;
 }
 
+.submenu {
+	overflow-y: scroll;
+	min-height: 135px;
+}
+
 .container div h3 {
 	padding-left: 4%;	
 }
@@ -36,4 +41,34 @@ article {
 
 i:hover {
 	cursor: pointer;
+}
+
+/* quantity items*/
+.quantity-object {
+	font-weight: bold;
+}
+
+/* icons add */
+.add-furniture i, .add-object i {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.add-furniture i:hover, .add-object i:hover {
+	cursor: pointer;
+}
+
+/* cardboard container*/
+.cardboard-container li {
+	list-style: none;
+	display: inline-block;
+	width: 15%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-left: 1px solid gray;
+}
+.cardboard-container li:first-child {
+	border-left: 0px;
 }

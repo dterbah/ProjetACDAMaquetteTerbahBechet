@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Informations clients</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/review-of-furniture.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="./assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./assets/js/review-of-furniture.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<article>
+		<div class="container">	
+			<div class="customer-info editable-container">
+
+				 <form class="w3-container w3-margin">
+				 	<h4 class="w3-center">Meuble</h4>
+				 		<div class="container-input-label">
+				 			<label>Label : </label>
+				 			<input type="text" name="label" class="w3-input w3-border" value="Commode">
+				 		</div>
+				 		
+				 		<div class="container-input-label">
+				 			<label>Largeur : </label>
+				 			<input type="text" name="width" class="w3-input w3-border calculation-input" value="1m">
+				 		</div>
+
+						<div class="container-input-label">
+							<label>Longueur : </label>
+							<input type="text" name="lenght" class="w3-input w3-border calculation-input" value="2m">
+						</div>	
+
+						<div class="container-input-label">
+							<label>Hauteur : </label>
+							<input type="email" name="height" class="w3-input w3-border calculation-input" value="1.5m">
+						</div>	
+
+						<div class="container-input-label">
+							<label>Volume</label>
+							<input type="text" name="volume" class="w3-input w3-border result-calculation-input" value="3m">
+						</div>
+
+						<div class="removable-container">
+							<div>
+								<input type="checkbox" class="removable-furniture">
+								<label>Démontable</label>
+							</div>
+
+							<div class="counter-items container-input-label">
+								<label>Pieces : </label>
+								<input type="text" name="" class="w3-input w3-border">
+							</div>
+						</div>		 		
+
+						<div class="container-input-label w3-margin-top">
+							<label>Pièce Origine : </label>
+							<input type="text" name="origin-room" class="w3-input w3-border" value="Grande salle">
+						</div>
+
+						<div class="container-input-label">
+							<label>Pièce Arrivée : </label>
+							<input type="text" name="arrival-room" class="w3-input w3-border" value="Pièce Destination">
+						</div>
+				 </form>
+
+			</div>
+
+			<div class="description-container">
+				<div class="picture-container w3-border">
+					<i class="fa fa-photo w3-center w3-jumbo"></i>
+					<button class="w3-button w3-circle w3-black w3-margin-top">+</button>
+				</div>
+				<form>
+					<textarea name="description" placeholder="Description..." class="w3-input w3-border w3-margin-top" rows="5"></textarea>
+				</form>	
+			</div>
+		</div>
+
+		<div class="bottom-container">
+				<button class="w3-button w3-round-large w3-gray" onclick='window.location="review-of-visit.html"'>Annuler</button>
+				<div class="container-input-label items-quantity">
+					<label>Quantité : </label>
+					<input type="text" name="items-quantity" class="w3-input w3-border">
+				</div>
+				<button class="w3-button w3-round-large w3-gray" onclick='window.location="review-of-visit.html"'>Confirmer</button>
+			</div>
+	</article>
+</body>
+</html>

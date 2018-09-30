@@ -57,11 +57,10 @@ article {
 .customer-info input {
 	height: 30px;
 }
-.customer-info input:not(.address-input) {
+.customer-info input {
 	width: 70%;
 	float: right;
 }
-
 
 .container-input-label label {
 	width: 25%;

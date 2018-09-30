@@ -1,0 +1,63 @@
+/* principal container */
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* editable-container*/
+.editable-container {
+	width: 45%;
+}
+
+.removable-container input {
+	float: none;
+	width: auto;
+	height: auto;
+}
+
+.counter-items {
+	display: none;
+}
+
+/* description container */
+.picture-container {
+	padding-bottom: 5%;
+}
+.description-container {
+	width: 50%;
+}
+
+.description-container i {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25%;
+}
+
+.description-container button {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.description-container textarea {
+	resize: none;
+}
+
+/*bottom container*/
+.bottom-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bottom-container button {
+	height: 45px;
+}
+
+.items-quantity input {
+	height: 30px;
+}
+.items-quantity input {
+	width: 70%;
+	float: right;
+}
