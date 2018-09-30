@@ -1,0 +1,39 @@
+article {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+	width: 90%;
+}
+
+/* principal container */
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container > div {
+	width: 47%;
+}
+
+.container div h3 {
+	padding-left: 4%;	
+}
+
+.submenu {
+	margin-top: 2.5%;
+}
+
+.submenu li {
+	list-style: none;
+	width: 90%;
+	border-radius: 6.5px;
+	padding-left: 3%;
+}
+
+.submenu li i {
+	float: right;
+}
+
+i:hover {
+	cursor: pointer;
+}
