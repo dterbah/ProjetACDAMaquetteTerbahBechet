@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Informations clients</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/review-of-visit.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -53,28 +54,23 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="button-container w3-margin-top">
-				<button class="w3-btn w3-gray" onclick='window.location="index.html"'>Annuler</button>
-				<button class="w3-btn w3-gray" onclick='window.location="finish-visit.html"'>Continuer</button>
+		<div class="w3-row">
+			<div class="button-container w3-half w3-margin-top w3-row">
+				<button class="w3-btn w3-gray w3-col" style="width: 30%;" onclick='window.location="index.html"'>Annuler</button>
+				<button class="w3-btn w3-gray w3-col w3-margin-left" style="width: 30%;" onclick='window.location="finish-visit.html"'>Continuer</button>
 			</div>
 
-			<div class="cardboard-container">
-				<ul class="w3-border">
-					<li>Pet : 2</li>
-					<li>Moy : 1</li>
-					<li>Bar : 2</li>
-					<li>Pen : 3</li>
-					<li>Tab : 4</li>
+			<div class="cardboard-container w3-half">
+				<ul class="w3-border w3-ul w3-row w3-margin-top">
+					<li class="w3-col" style="width: 20%;">Pet : 2</li>
+					<li class="w3-col" style="width: 20%;">Moy : 1</li>
+					<li class="w3-col" style="width: 20%;">Bar : 2</li>
+					<li class="w3-col" style="width: 20%;">Pen : 3</li>
+					<li class="w3-col" style="width: 20%;">Tab : 4</li>
 				</ul>
 			</div>
 		</div>
 		
-		<div class="progress-bar">
-			<div class="already-done w3-center">Choix du client</div>
-			<div class="todo w3-center">Revue de la visite</div>
-			<div class="todo w3-center">Choix des services</div>
-		</div>
 	</article>
 </body>
 </html>

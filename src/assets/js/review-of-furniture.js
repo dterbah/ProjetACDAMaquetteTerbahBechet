@@ -16,13 +16,13 @@ $(document).ready(function(){
 	$('.calculation-input').on('focusout', function(){
 		/* recovery of width, length and height*/
 		var width = $('input[name="width"]').val();
-		width = parseInt(width.substr(0, (width.length - 1)), 10);
+		width = parseFloat(width.substr(0, (width.length - 1)));
 
 		var length = $('input[name="lenght"]').val();
-		length = parseInt(length.substr(0, (length.length - 1)), 10)
+		length = parseFloat(length.substr(0, (length.length - 1)))
 
 		var height = $('input[name="height"]').val();
-		height = parseInt(height.substr(0, (height.length - 1)), 10);
+		height = parseFloat(height.substr(0, (height.length - 1)));
 
 		//change the volume value
 		$('.result-calculation-input').val('' + (length * width * height) + 'm');

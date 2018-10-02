@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Informations clients</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/home.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/review-of-furniture.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,37 +11,34 @@
 </head>
 <body>
 	<article>
-		<div class="container">	
-			<div class="customer-info editable-container">
+		<div class="container w3-row">	
+			<div class="customer-info editable-container w3-half">
 
 				 <form class="w3-container w3-margin">
 				 	<h4 class="w3-center">Assiettes</h4>
 				 		<div class="container-input-label">
 				 			<label>Label : </label>
-				 			<input type="text" name="label" class="w3-input w3-border" value="Assiettes">
-				 		</div>
-				 		
-				 		<div class="container-input-label">
-				 			<label>Poids : </label>
-				 			<input type="text" name="width" class="w3-input w3-border calculation-input" value="1m">
+				 			<input type="text" name="label" class="w3-input w3-border w3-margin-top" value="Assiette">
 				 		</div>
 
 						<div class="container-input-label">
+							<label>Poids : </label>
+							<input type="email" name="volume" class="w3-input w3-border calculation-input w3-margin-top" value="500g">
+						</div>	
+
+						<div class="container-input-label">
 							<label>Volume</label>
-							<input type="text" name="volume" class="w3-input w3-border result-calculation-input" value="3m">
-						</div>
-
-						<div class="removable-container">
-							<div>
-								<input type="checkbox" class="removable-furniture" checked="checked">
-								<label>Fragile</label>
-							</div>
-
-						</div>		 		
+							<input type="text" name="volume" class="w3-input w3-border result-calculation-input w3-margin-top" value="3m">
+						</div> 		
 
 						<div class="container-input-label w3-margin-top">
 							<label>Pièce Origine : </label>
 							<input type="text" name="origin-room" class="w3-input w3-border" value="Grande salle">
+						</div>
+						
+						<div class="w3-margin-top">
+							<label>Fragile</label>
+							<input type="checkbox" name="fragil" class="w3-check" checked="checked">
 						</div>
 
 						<div class="container-input-label">
@@ -54,21 +49,21 @@
 
 			</div>
 
-			<div class="description-container">
+			<div class="w3-half">
 				<form>
-					<textarea name="description" placeholder="Description..." class="w3-input w3-border w3-margin-top" rows="5"></textarea>
+					<textarea name="description" placeholder="Description..." class="w3-input w3-border w3-margin-top" rows="5" style="resize: none;"></textarea>
 				</form>	
 			</div>
 		</div>
 
-		<div class="bottom-container">
+		<div class="bottom-container" style="display: flex; justify-content: space-around;">
 				<button class="w3-button w3-round-large w3-gray" onclick='window.location="review-of-visit.html"'>Annuler</button>
 				<div class="container-input-label items-quantity">
 					<label>Quantité : </label>
-					<input type="text" name="items-quantity" class="w3-input w3-border" value="5">
+					<input type="text" name="items-quantity" class="w3-input w3-border">
 				</div>
 				<button class="w3-button w3-round-large w3-gray" onclick='window.location="review-of-visit.html"'>Confirmer</button>
-			</div>
+		</div>
 	</article>
 </body>
 </html>

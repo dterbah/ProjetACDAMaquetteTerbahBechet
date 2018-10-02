@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Informations clients</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/review-of-visit.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/finish-visit.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,9 +13,9 @@
 </head>
 <body>
 	<article>
-		<div class="container">
+		<div class="container w3-row">
 
-				<div class="furniture-list">
+				<div class="w3-half">
 
 					<form>
 						<h3 class="w3-center w3-border">Services Premium*</h3>
@@ -59,7 +58,7 @@
 					</form>
 				</div>
 
-				<div class="object-list">
+				<div class="w3-half">
 					<form>
 						<h3 class="w3-center w3-border">Services Eco**</h3>
 						<div class="container-checkbox w3-margin-top">
@@ -91,12 +90,12 @@
 	</div>
 
 	<div class="footer-container">
-		<div class="informations-services">
+		<div class="informations-services" style="display: flex; justify-content: space-around;">
 			<i>* Nécessite des frais supplémentaires</i>
 			<i>** Diminution des frais</i>
 		</div>
 
-		<div class="button-container w3-margin-top">
+		<div class="button-container w3-margin-top" style="display: flex; justify-content: space-around;">
 			<button class="w3-button w3-round-large w3-gray" onclick='window.location="review-of-visit.html"'>Retour</button>
 			<button class="w3-button w3-round-large w3-gray">Terminer</button>
 		</div>
