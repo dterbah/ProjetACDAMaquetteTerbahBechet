@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Informations clients</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/home.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,53 +16,57 @@
 			<h4 class="top-title">Liste Cients</h4>
 			<button class="w3-button w3-gray begin-visit" onclick='window.location="review-of-visit.html"'>Commencer la visite</button>
 		</div>
-		<div class="container">
+		<div class="container w3-row">
 
-			<div class="customer-list w3-border">
+			<div class="w3-border w3-third">
 				<ul>
-					<li class="w3-padding-16" id="thomas-bechet">Thomas Béchet</li>
-					<li class="w3-padding-16" id="dorian-terbah">Dorian Terbah</li>
-					<li class="w3-padding-16" id="nathan-bertholier">Nathan Bertholier</li>
-					<li class="w3-padding-16 active-customer" id="jean-dupont">Mr Dupont</li>
-					<li class="w3-padding-16" id="patrick-cegielski">Patrick Cegielski</li>
-					<li class="w3-padding-16" id="nathalie-gillet">Nathalie Gillet</li>
-					<li class="w3-padding-16" id="denis-monnerat">Denis Monnerat</li> 
+					<li class="w3-padding-16 w3-center" id="thomas-bechet">Thomas Béchet</li>
+					<li class="w3-padding-16 w3-center" id="dorian-terbah">Dorian Terbah</li>
+					<li class="w3-padding-16 w3-center" id="nathan-bertholier">Nathan Bertholier</li>
+					<li class="w3-padding-16 w3-center active-customer" id="jean-dupont">Mr Dupont</li>
+					<li class="w3-padding-16 w3-center" id="patrick-cegielski">Patrick Cegielski</li>
+					<li class="w3-padding-16 w3-center" id="nathalie-gillet">Nathalie Gillet</li>
+					<li class="w3-padding-16 w3-center" id="denis-monnerat">Denis Monnerat</li> 
 				</ul>
 			</div>
 
-			<div class="customer-info w3-border">
+			<div class="w3-third w3-border">
 
 				 <form class="w3-container w3-margin">
 				 	<h4 class="w3-center w3-border">Informations Client</h4>
 				 		<div class="container-input-label">
 				 			<label>Nom : </label>
-				 			<input type="text" name="lastname" class="w3-input w3-border" value="Dupont">
+				 			<input type="text" name="lastname" class="w3-input w3-border w3-margin-top" value="Dupont">
 				 		</div>
 				 		
 				 		<div class="container-input-label">
 				 			<label>Prénom : </label>
-				 			<input type="text" name="firstname" class="w3-input w3-border" value="Jean">
+				 			<input type="text" name="firstname" class="w3-input w3-border w3-margin-top" value="Jean">
 				 		</div>
 
-						<div class="container-input-label">
-							<label><i class="fa fa-phone w3-xlarge"></i> : </label>
-							<input type="text" name="phone-number" class="w3-input w3-border" value="06.06.06.06.06">
-						</div>	
+						<div class="w3-row w3-section">
+	  						<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+	    						<div class="w3-rest">
+	      						<input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+	    					</div>
+						</div>
 
-						<div class="container-input-label">
-							<label><i class="fa fa-envelope-o w3-xlarge"></i> : </label>
-							<input type="email" name="email" class="w3-input w3-border" value="jean.dupont@gmail.com">
-						</div>	
+						<div class="w3-row w3-section">
+	  						<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+	    						<div class="w3-rest">
+	      						<input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+	    					</div>
+						</div>
 
 						<div>
 							<label>Logement départ : </label>
-							<input type="text" name="addressStart" class="w3-input w3-border address-input" value="3 rue de la Tour, Tourville">
+							<input type="text" name="addressStart" class="w3-input w3-border address-input w3-margin-top" value="3 rue de la Tour, Tourville">
 						</div>		 		
 				 </form>
 
 			</div>
 
-			<div class="housing-info w3-border">
+			<div class="w3-third w3-border">
 				<form class="w3-container w3-margin">
 				 	<h4 class="w3-center w3-border">Informations Logement</h4>
 				 		<select class="w3-select" name="option">
@@ -79,14 +82,14 @@
 
 						<div class="container-room">
 							<label>Nombre de pièces : </label>
-							<input type="text" name="number-room" value="3" class="w3-input w3-border">
+							<input type="text" name="number-room" value="3" class="w3-input w3-border w3-margin-top">
 						</div>
 
 						<br><br>
 
 						<div>
 							<label>Logement d'arrivée : </label>
-							<input type="text" name="addressEnd" class="w3-input w3-border address-input" value="4 rue de la Liberté, LibertyCity">
+							<input type="text" name="addressEnd" class="w3-input w3-border address-input w3-margin-top" value="4 rue de la Liberté, LibertyCity">
 						</div>
 				 </form>
 			</div>

@@ -35,11 +35,9 @@ article {
 }
 
 .active-customer {
-	background-color: #afb2a1;
-	border-bottom-right-radius : 40px;
-	border-top-right-radius: 40px;
-	width: 100%;
-	border: 1px solid gray;
+	-webkit-clip-path: polygon(0% 0%, 96% 0, 100% 50%, 95% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 96% 0, 100% 50%, 95% 100%, 0% 100%);
+	background-color: red;	
 }
 
 
@@ -91,4 +89,3 @@ article {
 	height: 30px;
 	float: right;
 }
-

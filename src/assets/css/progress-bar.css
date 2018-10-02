@@ -1,0 +1,15 @@
+/* progress-bar */
+.progress-bar {
+	display: flex;
+}
+
+.progress-bar div {
+	width: 33.33%;
+}
+
+.already-done {
+	background-color: #52be80;
+}
+.todo {
+	background-color: #cd6155;
+}
