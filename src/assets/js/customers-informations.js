@@ -68,7 +68,7 @@ let customerTab = {
 
 $(document).ready(function(){
 	/* change customer info when customer's choice is changed*/
-	$('.w3-ul li').on('click', function(){
+	$('.customer-list li').on('click', function(){
 		var id = $(this).attr('id')
 		$('.active-customer').removeClass('active-customer');
 		$(this).addClass('active-customer');

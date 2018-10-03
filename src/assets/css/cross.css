@@ -1,5 +1,11 @@
 .active-customer {
-	-webkit-clip-path: polygon(0% 0%, 96% 0, 100% 50%, 95% 100%, 0% 100%);
-	clip-path: polygon(0% 0%, 96% 0, 100% 50%, 95% 100%, 0% 100%);
-	background-color: red;
+	-webkit-clip-path: polygon(0% 0%, 95%, 0, 100% 50%, 95% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+	background-color: #AAABE3;
+	position: relative;
+	width: 105%;
+}
+
+.customer-list li {
+	cursor: pointer;
 }

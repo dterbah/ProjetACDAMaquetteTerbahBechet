@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html  style="height:100vh">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Informations clients</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="./assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./assets/js/add-room.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lato');
+		* {
+			font-family: 'Lato', sans-serif;
+			font-size:20px;
+		}
+	</style>
+</head>
+<body style="height:100vh">
+	<article style="height:80%">
+		<div class="w3-bar" style="background-color:#5557AF">
+			<h4 class="w3-margin w3-align-left" style="color:white">Client: Mr Dupont</h4>
+		</div>
+		
+		<div class="container w3-row" style="height:100%;">
+
+				<div class="furniture-list w3-rest" style="height: 100%; width: 100%;">
+
+					<div class="w3-border">
+						<h3 class="w3-center">Liste Salles</h3>
+					</div>
+
+					<div class="submenu w3-border" style="height: 90%">
+						<div>
+						<ul style="list-style: none; padding:0; margin:0;" class="container-room">
+							<li style="border: solid 2px; border-radius: 10px; width: 50%; display: block; margin-right: auto; margin-left: auto;" class="w3-padding w3-margin-top" onclick='window.location="review-of-furniture.html"'> Cuisine <i style="float: right; cursor: pointer" class="w3-align-right fa fa-pencil"  onclick='window.location="review-of-furniture.html"'></i></li>
+							<li style="border: solid 2px; border-radius: 10px; width: 50%; display: block; margin-right: auto; margin-left: auto;" class="w3-padding w3-margin-top" onclick='window.location="review-of-furniture.html"'> Chambre Papa <i style="float: right; cursor: pointer" class="fa fa-pencil"></i></li>
+							<li style="border: solid 2px; border-radius: 10px; width: 50%; display: block; margin-right: auto; margin-left: auto;" class="w3-padding w3-margin-top" onclick='window.location="review-of-furniture.html"'> Chambre Maman <i style="float: right; cursor: pointer" class="fa fa-pencil"></i></li>
+						</ul>
+						</div>
+						<button class="w3-button w3-circle w3-black button-add-room" style="display: block;
+																margin-right: auto;
+																margin-left: auto;
+																margin-top: 20px;">+
+					</button>
+
+					</div>
+
+
+					
+				</div>
+
+		</div>
+	
+	</article>
+</body>
+</html>

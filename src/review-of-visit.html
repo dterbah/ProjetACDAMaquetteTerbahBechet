@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html  style="height:100vh">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Informations clients</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/review-of-visit.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="./assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lato');
+		* {
+			font-family: 'Lato', sans-serif;
+			font-size:20px;
+		}
+	</style>
 </head>
-<body>
-	<article>
-		<h3 class="w3-center">Client : Mr Dupont</h3>		
-		<div class="container">
+<body style="height:100vh">
+	<article style="height:80%">
+		<div class="w3-bar" style="background-color:#5557AF">
+			<h4 class="w3-margin w3-align-left" style="color:white">Client: Mr Dupont</h4>
+		</div>
+		
+		<div class="container w3-row" style="height:100%">
 
-				<div class="furniture-list">
+				<div class="furniture-list w3-half" style="height: 100%">
 
 					<div class="w3-border">
-						<h3 class="w3-left-align">Liste Meubles</h3>
+						<h3 class="w3-center">Liste Meubles</h3>
 					</div>
 
-					<div class="submenu w3-border">
-						<ul>
-							<li class="w3-border w3-margin-top"> Meuble IKEA <i class="fa fa-pencil"  onclick='window.location="review-of-furniture.html"'></i></li>
-							<li class="w3-border w3-margin-top" onclick='window.location="review-of-furniture.html"'> Commode <i class="fa fa-pencil"></i></li>
-							<li class="w3-border w3-margin-top" onclick='window.location="review-of-furniture.html"'> Buffet <i class="fa fa-pencil"></i></li>
+					<div class="submenu w3-border" style="height: 90%">
+						<ul style="list-style: none; padding:0; margin:0;">
+							<li style="border: solid 2px; border-radius: 10px" class="w3-margin w3-padding"> Meuble IKEA <i style="float: right; cursor: pointer" class="w3-align-right fa fa-pencil"  onclick='window.location="review-of-furniture.html"'></i></li>
+							<li style="border: solid 2px; border-radius: 10px" class="w3-margin w3-padding" onclick='window.location="review-of-furniture.html"'> Commode <i style="float: right; cursor: pointer" class="fa fa-pencil"></i></li>
+							<li style="border: solid 2px; border-radius: 10px" class="w3-margin w3-padding" onclick='window.location="review-of-furniture.html"'> Buffet <i style="float: right; cursor: pointer" class="fa fa-pencil"></i></li>
 						</ul>
+
+						
+
 					</div>
+
+					<div style="width:100%;" class="w3-center add-furniture w3-border">
+						<i class="fa fa-plus-square w3-center" style="position: relative; bottom: 0"></i>
+					</div>
+					
 				</div>
 
-				<div class="object-list">
-					<div class="w3-border">
-						<h3 class="w3-left-align">Liste Objets</h3>
+				<div class="object-list w3-half" style="height: 100%">
+					<div class="w3-border w3-center">
+						<h3 class="w3-center">Liste Objets</h3>
 					</div>
 
-					<div class="submenu w3-border">
-						<ul>
-							<li class="w3-border w3-margin-top">Assiettes  <span class="quantity-object"> x 284</span> <i class="fa fa-pencil" onclick='window.location="review-of-object.html"'></i></li>
-							<li class="w3-border w3-margin-top" onclick='window.location="review-of-object.html"'> Mini babyfoot <i class="fa fa-pencil"></i></li>		
+					<div class="submenu w3-border" style="height: 90%">
+						<ul style="list-style: none; padding:0; margin:0;">
+							<li style="border: solid 2px; border-radius: 10px" class="w3-margin w3-padding">Assiettes  <span style="text-align:right; font-weight:italic" class="quantity-object">x284</span> <i style="float: right; cursor: pointer" class="fa fa-pencil" onclick='window.location="review-of-object.html"'></i></li>
+							<li style="border: solid 2px; border-radius: 10px" class="w3-margin w3-padding" onclick='window.location="review-of-object.html"'> Mini babyfoot <i style="float: right; cursor: pointer" class="fa fa-pencil"></i></li>		
 						</ul>
+					</div>
+
+					<div style="width:100%" class="w3-display-bottom w3-center add-furniture w3-border w3-half">
+						<i class="fa fa-plus-square w3-center"></i>
 					</div>
 				</div>
 		</div>
 
-		<div class="container w3-margin-top">
-			<div class="add-furniture w3-border">
-				<i class="fa fa-plus-square w3-center"></i>
-			</div>
-
-			<div class="add-object w3-border">
-				<i class="fa fa-plus-square w3-center"></i>
-			</div>
-		</div>
-
-		<div class="w3-row">
+		<div class="w3-row w3-display-bottom w3-margin-top">
 			<div class="button-container w3-half w3-margin-top w3-row">
-				<button class="w3-btn w3-gray w3-col" style="width: 30%;" onclick='window.location="index.html"'>Annuler</button>
+				<button class="w3-margin-left w3-display-bottom w3-btn w3-gray w3-col" style="width: 30%;" onclick='window.location="index.html"'>Annuler</button>
 				<button class="w3-btn w3-gray w3-col w3-margin-left" style="width: 30%;" onclick='window.location="finish-visit.html"'>Continuer</button>
 			</div>
 
 			<div class="cardboard-container w3-half">
-				<ul class="w3-border w3-ul w3-row w3-margin-top">
+				<ul style="border-radius:10px" class="w3-border w3-ul w3-row w3-margin-top w3-margin-right">
 					<li class="w3-col" style="width: 20%;">Pet : 2</li>
 					<li class="w3-col" style="width: 20%;">Moy : 1</li>
 					<li class="w3-col" style="width: 20%;">Bar : 2</li>
