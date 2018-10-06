@@ -26,4 +26,10 @@ $(document).ready(function(){
 		/* set the new price */
 		$('.actualPrice').text('' + actualPrice + '€');
 	});
+
+	$('.end-visit').on('click', function() {
+		$('.end-visit-p').css({
+			'display' 		: 		'block'
+		});
+	});
 });
