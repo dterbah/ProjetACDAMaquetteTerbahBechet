@@ -5,11 +5,11 @@ let onclick = 'window.location="review-of-furniture.html"'
 $(document).ready(function() {
 	//add a new li
 	$('.button-add-room').on('click', function() {
-		$('.container-room').append('<li contenteditable="true" id="li' + index + '" class="w3-padding w3-margin-top li-added"><i  class="fa fa-pencil"></i></li>');
+		$('.container-room').append('<li contenteditable="true" id="li' + index + '" class="w3-padding w3-margin-top li-added"> <i  class="fa fa-pencil"></i></li>');
 		index++;
 		$('.container-room .li-added:last-child').focus(); //give the focus
 		/* add the listeners at added li*/
-		$('.container-room .li-added').on('focusout', function() {
+		$('.container-room li').on('focusout', function() {
 			var actualID = $(this).attr('id');
 			$('#' + actualID).attr('contenteditable', 'false');
 		});
@@ -21,6 +21,6 @@ $(document).ready(function() {
 	});
 
 	$('.container-room li i').on('click', function() {
-		window.location = "review-of-visit.html";
+		$(location).attr('href', 'review-of-visit.html');
 	});
 });
